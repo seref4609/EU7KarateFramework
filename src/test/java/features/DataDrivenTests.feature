@@ -35,6 +35,7 @@ Feature: Data driven tests
     Examples:
       | read('data/users.csv') |
 
+
   Scenario: get user information verification(Database vs API)
     * def DBUtils = Java.type('utilities.DBUtils')
     * def query = "select firstname,lastname,role from users where email = 'sbirdbj@fc2.com'"
